@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Games</title>
+    <meta name="description" content="A proposed games meetup for Entheo Temple, starting with an event of silent games and an event of deciphering imagery.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap">
+    <style>
+        :root {
+            --ink: #170321;
+            --heading: #333333;
+            --body: #595959;
+            --muted: #808080;
+            --accent: #7572c8;
+            --line: #f0f0f0;
+            --tint: #f5f4fc;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            background: #ffffff;
+            color: var(--ink);
+            line-height: 1.4;
+        }
+
+
+        main {
+            max-width: 50rem;
+            margin: 0 auto;
+            padding: 1.25rem 1rem 4rem;
+        }
+
+        /* Intro for the ministers */
+        .intro {
+            background: var(--tint);
+            border: 0.5px solid #e4e2f6;
+            border-radius: 8px;
+            padding: 1.25rem;
+            color: var(--body);
+        }
+
+        .intro h1 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--ink);
+        }
+
+        .intro .lede {
+            margin-top: 0.5rem;
+            font-size: 1.05rem;
+        }
+
+        .intro h2 {
+            margin-top: 1.25rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--heading);
+        }
+
+        .intro p,
+        .intro ul { margin-top: 0.5rem; }
+
+        .intro ul { padding-left: 1.25rem; }
+        .intro li + li { margin-top: 0.3rem; }
+        .intro strong { color: var(--heading); font-weight: 600; }
+
+        .tbd {
+            color: var(--accent);
+            font-style: italic;
+        }
+
+        /* Event listings, laid out like Heylo event pages */
+        .event {
+            margin-top: 2.5rem;
+            padding-top: 2.5rem;
+            border-top: 1px solid #e6e6e6;
+        }
+
+        .event-head {
+            display: flex;
+            gap: 1.25rem;
+            align-items: center;
+        }
+
+        .cover {
+            flex: none;
+            display: block;
+            width: 315px;
+            aspect-ratio: 1;
+            border-radius: 8px;
+            object-fit: contain;
+            background: var(--tint);
+        }
+
+        .event-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.35;
+            color: var(--heading);
+        }
+
+        .meta {
+            margin-top: 0.6rem;
+            display: flex;
+            gap: 0.5rem;
+            align-items: flex-start;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+
+        .meta svg {
+            flex: none;
+            width: 18px;
+            height: 18px;
+            margin-top: 2px;
+        }
+
+        .meta-date { color: var(--accent); }
+        .meta-place { color: var(--muted); }
+
+        .section-label {
+            margin-top: 1.75rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--heading);
+        }
+
+        .about {
+            margin-top: 0.6rem;
+            font-size: 1rem;
+            color: var(--body);
+            white-space: pre-line;
+            overflow-wrap: anywhere;
+        }
+
+        .copy {
+            margin-top: 1.5rem;
+            display: block;
+            width: 100%;
+            max-width: 34rem;
+            margin-left: auto;
+            margin-right: auto;
+            height: 56px;
+            border: none;
+            border-radius: 8px;
+            background: var(--ink);
+            color: #ffffff;
+            font: inherit;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .about a { color: var(--accent); }
+
+        .copy:hover { background: #2e1240; }
+        .copy[data-copied] { background: var(--accent); }
+
+        .copy-note {
+            margin-top: 0.4rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--muted);
+        }
+
+        .intro a { color: var(--accent); }
+
+        @media (max-width: 40rem) {
+            .event-head {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .cover { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section class="intro">
+            <h1>Games</h1>
+            <p class="lede">A proposed new meetup for Entheo Temple, starting with three events that explore communicating beyond ordinary conversation: without words or gestures, through images, and across unfamiliar languages.</p>
+
+            <h2>For our ministers</h2>
+            <p>Games already have a place at our Full Moon gatherings. We’d love to offer game meetups of their own. For our first three ideas, we’ve picked themes that all involve different forms of limited communication: <strong>communicating nonverbally</strong>, <strong>communicating using surreal imagery</strong>, and <strong>alien languages</strong>.</p>
+            <p>Most of the games for these events are cooperative, where the whole table wins or loses together, because those tend to be our favorites. Future events don’t need to be. Below the idea, you’ll find three draft listings laid out the way they’d appear on Heylo, ready to post or adjust.</p>
+
+            <h2>Why these themes fit</h2>
+            <ul>
+                <li><strong>Oneness.</strong> In a cooperative game there is no “my” win. “I am you. You are me. We are ONE” becomes the literal rule of the table.</li>
+                <li><strong>Connection beyond words.</strong> When we can’t talk, or can only speak through pictures, players learn to read each other through attention, intuition, and trust.</li>
+                <li><strong>Newcomer-friendly.</strong> Every game is light, taught in a few minutes at the table, and plays in 7–45 minutes. No heavy strategy or math.</li>
+                <li><strong>Gentle.</strong> Nobody is attacked or knocked out. Everyone plays to the end.</li>
+            </ul>
+
+            <h2>How it would work</h2>
+            <ul>
+                <li><strong>Three events, three themes.</strong> <em>Communicating Nonverbally</em> has five quick games played without words or gestures. <em>Communicating Using Surreal Imagery</em> has longer games where a silent guide speaks only through pictures. <em>Alien Languages</em> has three games about unlocking ancient and alien languages. We could run them in any order, on different dates.</li>
+                <li><strong>Any group size.</strong> Each game seats somewhere between 4 and 9 players, so a bigger crowd can split into several tables.</li>
+                <li><strong>We bring the games</strong> from our own collection, and teach each one at the table.</li>
+                <li><strong>Flexible in the moment.</strong> We’ll focus on the games listed in each event, but we’re happy to teach and play other games too, based on what the guests enjoy.</li>
+                <li><strong>Each event closes with a short sharing circle:</strong> what did we notice about how we connected?</li>
+            </ul>
+
+            <h2>When to host</h2>
+            <p>Part of the question is when. We’re night owls, and later times work better on weekdays for Jessy’s work schedule (which is somewhat flexible about when it ends).</p>
+            <p>We’d like to try hosting monthly, maybe alternating between:</p>
+            <ul>
+                <li><strong>A weekday evening</strong>, roughly 6:30–10:30 PM</li>
+                <li><strong>A Saturday</strong>, also a 4-hour slot, probably earlier in the day</li>
+            </ul>
+            <p>That way, people who can’t make one can likely make the other, and we can see which works best for everyone.</p>
+
+            <h2>Not just board games</h2>
+            <p>You may have noticed from your visit that we’re what’s called “omnigamers”: we play games of every kind. The events below use board and card games, but the meetup doesn’t need to be limited to any one type of game.</p>
+            <p>For example, our living room can support a whole group playing a video game together, with everyone using their own phone as a controller. The Jackbox Party Packs have a handful of great games that work this way in a living room setting.</p>
+            <p>We’d also love to take games outside our home. <a href="https://escapeartistgreenville.com/chimera-corp-saga/">Chimera Corp Saga</a> at Escape Artist in Greenville, SC is three escape rooms played back to back, with linking storylines, bonus content throughout, and an exclusive ending: a 3+ hour adventure for 2–8 players. It’s $499 for up to 4 players, plus $124.75 for each additional player, so a full group of 8 works out to $124.75 each. We know the owners personally and would love to support them by bringing a group. We’ve already played these rooms (and all their others) individually, so we’d be happy to act as observers and help anyone who gets stuck, rather than solving them ourselves again.</p>
+
+            <h2>A name for the meetup</h2>
+            <p>We’d love for you to choose the name. Since nobody else is hosting games, we think “game” belongs in it, but not “board game,” since there may not always be boards. Some ideas:</p>
+            <ul>
+                <li><strong>Games of Oneness</strong>: ties directly to “we are all One”</li>
+                <li><strong>Connection Games</strong>: fits the communication theme</li>
+                <li><strong>Game Circle</strong>: matches the Temple’s “circle” language, though it could blur with Breathwork and Gratitude Circles</li>
+            </ul>
+
+            <h2>What we need from you</h2>
+            <ul>
+                <li>A name for the meetup</li>
+                <li>Which event to start with</li>
+                <li>Which schedule works best (see “When to host” above)</li>
+                <li>A venue: our home, a member’s home, or alongside an existing gathering</li>
+                <li>A suggested donation range, if any</li>
+                <li>Whether children are welcome</li>
+                <li>Any changes to the listings below</li>
+            </ul>
+            <p>We’ve seen sections like What to Bring, a first-time connection call, a suggested donation, and a sign-off on the announcement posts for other events. We’d also like your input on whether ours should include a timeline. We can help write any of these, with your guidance.</p>
+            <p>For now, each listing below uses the box art from one of its games as its image. Would you prefer a standard image for the meetup that we use every time instead? Catie is an artist and can make it. We also won’t be offended if you’d rather give us an AI mockup to use as a reference.</p>
+            <p>Each listing’s button copies its description for pasting into Heylo.</p>
+
+            <h2>Next steps</h2>
+            <p>Once you’re happy with the general vibe of this kind of event, we’d like to sit down with you and talk through:</p>
+            <ul>
+                <li>How to make our space welcoming to guests</li>
+                <li>What rules we must follow when hosting</li>
+            </ul>
+        </section>
+
+        <article class="event" id="silence">
+            <div class="event-head">
+                <img class="cover" src="images/tranquility.jpg" alt="Tranquility box art" loading="lazy">
+                <div>
+                    <h2 class="event-title">Games: Communicating Nonverbally (Acworth/Kennesaw)</h2>
+                </div>
+            </div>
+
+            <p class="section-label">About</p>
+            <div class="about">This is a monthly gathering for anyone who might enjoy connecting with other members via gameplay experiences.
+
+<strong>THIS MONTH'S THEME:</strong>
+The complete removal of words and gestures from communication.
+
+What can we say to each other, when all we have available are the choices we convey via our actions?
+
+<strong>GAMES ON THE TABLE:</strong>
+We'll play at least some of what is listed here. They're all quick to learn, and we'll teach you! No experience is necessary. Feel free to watch the overviews linked below though, if you'd like to preview.
+
+In addition to fitting the theme, all of these are cooperative as well. (That means everyone is on the same team.)
+
+🧙 <a href="https://www.youtube.com/watch?v=qZZQJX1cz64">Magic Maze</a>
+⛏️ <a href="https://www.youtube.com/watch?v=25fLdJPuZRY">Infernal Wagon</a>
+🌊 <a href="https://www.youtube.com/watch?v=UMIXsm06pJ4">Tranquility</a>
+🤖 <a href="https://www.youtube.com/watch?v=Fj3oglzCyOg">Quirky Circuits</a>
+⏰ <a href="https://www.youtube.com/watch?v=r4Q1ikRibig">Groundhog Day</a> (yes, based on <a href="https://en.wikipedia.org/wiki/Groundhog_Day_(film)">the classic movie</a>)
+
+We are open to suggestions! We have an extensive library available, but want to make sure we're caught up on the rules before the event. Let's discuss in <strong>Chat</strong> if you know of other good thematic matches.</div>
+
+            <button class="copy" type="button">Copy description</button>
+            <p class="copy-note">For pasting into Heylo</p>
+        </article>
+
+        <article class="event" id="deciphering-imagery">
+            <div class="event-head">
+                <img class="cover" src="images/mysterium.jpg" alt="Mysterium box art" loading="lazy">
+                <div>
+                    <h2 class="event-title">Games: Communicating Using Surreal Imagery (Acworth/Kennesaw)</h2>
+                </div>
+            </div>
+
+            <p class="section-label">About</p>
+            <div class="about">This is a monthly gathering for anyone who might enjoy connecting with other members via gameplay experiences.
+
+<strong>THIS MONTH'S THEME:</strong>
+Communication using only existing images, rather than our own words, or anything else we could normally create.
+
+What can we say to each other, when all we have available is someone else's artwork?
+
+<strong>GAMES ON THE TABLE:</strong>
+We'll play at least some of what is listed here. They're all quick to learn, and we'll teach you! No experience is necessary. Feel free to watch the overviews linked below though, if you'd like to preview.
+
+In addition to fitting the theme, all of these are cooperative or team-based as well, depending on how many people are playing.
+
+👻 <a href="https://www.youtube.com/watch?v=Bw2Xz9wp4KI">Mysterium</a>
+🎡 <a href="https://www.youtube.com/watch?v=Q2cxlWY4oFg">Mysterium Park</a>
+📖 <a href="https://www.youtube.com/watch?v=pnCICiN9KSA">Obscurio</a>
+🕵️ <a href="https://www.youtube.com/watch?v=-hYyKRBwr7M">Shadows: Amsterdam</a>
+
+We are open to suggestions! We have an extensive library available, but want to make sure we're caught up on the rules before the event. Let's discuss in <strong>Chat</strong> if you know of other good thematic matches.</div>
+
+            <button class="copy" type="button">Copy description</button>
+            <p class="copy-note">For pasting into Heylo</p>
+        </article>
+
+        <article class="event" id="deciphering-language">
+            <div class="event-head">
+                <img class="cover" src="images/first-contact.jpg" alt="First Contact box art" loading="lazy">
+                <div>
+                    <h2 class="event-title">Games: Alien Languages (Acworth/Kennesaw)</h2>
+                </div>
+            </div>
+
+            <p class="section-label">About</p>
+            <div class="about">This is a monthly gathering for anyone who might enjoy connecting with other members via gameplay experiences.
+
+<strong>THIS MONTH'S THEME:</strong>
+Overcoming language barriers, by intentionally building shared understanding.
+
+The games we'll be playing take different approaches to this, each using two groups. In one group, we remain as ourselves: humans who speak English. In the other, we roleplay as members of fictional ancient civilizations, or extraterrestrials.
+
+Some of our exploration will involve "Receptive Multilingualism", where people understand each others' languages, but only speak in their native tongue.
+
+<strong>GAMES ON THE TABLE:</strong>
+We'll play at least some of what is listed here. They're all quick to learn, and we'll teach you! No experience is necessary. Feel free to watch the overviews linked below though, if you'd like to preview.
+
+📜 <a href="https://www.youtube.com/watch?v=z1JWMbmGF-8">Rosetta: The Lost Language</a>
+👽 <a href="https://www.youtube.com/watch?v=pz7N6wv2uck">First Contact</a>
+✨ <a href="https://www.youtube.com/watch?v=nsA7vvqgnps">A Message from the Stars</a>
+
+We are open to suggestions! We have an extensive library available, but want to make sure we're caught up on the rules before the event. Let's discuss in <strong>Chat</strong> if you know of other good thematic matches.</div>
+
+            <button class="copy" type="button">Copy description</button>
+            <p class="copy-note">For pasting into Heylo</p>
+        </article>
+
+    </main>
+
+    <script>
+        for (const button of document.querySelectorAll('.copy')) {
+            button.addEventListener('click', async () => {
+                const about = button.closest('.event').querySelector('.about').cloneNode(true);
+                for (const strong of about.querySelectorAll('strong')) {
+                    strong.replaceWith(`**${strong.textContent}**`);
+                }
+                for (const link of about.querySelectorAll('a')) {
+                    link.replaceWith(`[${link.textContent}](${link.getAttribute('href')})`);
+                }
+                const text = about.textContent.trim();
+                try {
+                    await navigator.clipboard.writeText(text);
+                    button.dataset.copied = '';
+                    button.textContent = 'Copied';
+                    setTimeout(() => {
+                        delete button.dataset.copied;
+                        button.textContent = 'Copy description';
+                    }, 2000);
+                } catch {
+                    button.textContent = 'Copy failed';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
