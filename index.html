@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Entheo Temple Game Events</title>
-    <meta name="description" content="A proposed games meetup for Entheo Temple, starting with an event of silent games and an event of deciphering imagery.">
+    <meta name="description" content="A proposal for a recurring games meetup at Entheo Temple, with three potential events exploring limited communication.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap">
     <style>
@@ -137,34 +137,6 @@
             overflow-wrap: anywhere;
         }
 
-        .copy {
-            margin-top: 1.5rem;
-            display: block;
-            width: 100%;
-            max-width: 34rem;
-            margin-left: auto;
-            margin-right: auto;
-            height: 56px;
-            border: none;
-            border-radius: 8px;
-            background: var(--ink);
-            color: #ffffff;
-            font: inherit;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-
-        .about a { color: var(--accent); }
-
-        .copy:hover { background: #2e1240; }
-        .copy[data-copied] { background: var(--accent); }
-
-        .copy-note {
-            margin-top: 0.4rem;
-            text-align: center;
-            font-size: 0.8rem;
-            color: var(--muted);
-        }
 
         .intro a { color: var(--accent); }
 
@@ -231,9 +203,6 @@ In addition to fitting the theme, all of these are cooperative as well. (That me
 ⏰ <a href="https://www.youtube.com/watch?v=r4Q1ikRibig">Groundhog Day</a> (yes, based on <a href="https://en.wikipedia.org/wiki/Groundhog_Day_(film)">the classic movie</a>)
 
 We are open to suggestions! We have an extensive library available, but will want at least a week to catch up on the rules before teaching the group. Let's discuss in <strong>Chat</strong> if you know of other good thematic matches for this event.</div>
-
-            <button class="copy" type="button">Copy description</button>
-            <p class="copy-note">For pasting into Heylo</p>
         </article>
 
         <article class="event" id="deciphering-imagery">
@@ -263,9 +232,6 @@ All of these are either fully cooperative, or team-based, depending on how many 
 🕵️ <a href="https://www.youtube.com/watch?v=-hYyKRBwr7M">Shadows: Amsterdam</a>
 
 We are open to suggestions! We have an extensive library available, but will want at least a week to catch up on the rules before teaching the group. Let's discuss in <strong>Chat</strong> if you know of other good thematic matches for this event.</div>
-
-            <button class="copy" type="button">Copy description</button>
-            <p class="copy-note">For pasting into Heylo</p>
         </article>
 
         <article class="event" id="deciphering-language">
@@ -294,37 +260,9 @@ We'll play at least some of what is listed here. They're all quick to learn, and
 ✨ <a href="https://www.youtube.com/watch?v=nsA7vvqgnps">A Message from the Stars</a>
 
 We are open to suggestions! We have an extensive library available, but will want at least a week to catch up on the rules before teaching the group. Let's discuss in <strong>Chat</strong> if you know of other good thematic matches for this event.</div>
-
-            <button class="copy" type="button">Copy description</button>
-            <p class="copy-note">For pasting into Heylo</p>
         </article>
 
     </main>
 
-    <script>
-        for (const button of document.querySelectorAll('.copy')) {
-            button.addEventListener('click', async () => {
-                const about = button.closest('.event').querySelector('.about').cloneNode(true);
-                for (const strong of about.querySelectorAll('strong')) {
-                    strong.replaceWith(`**${strong.textContent}**`);
-                }
-                for (const link of about.querySelectorAll('a')) {
-                    link.replaceWith(`[${link.textContent}](${link.getAttribute('href')})`);
-                }
-                const text = about.textContent.trim();
-                try {
-                    await navigator.clipboard.writeText(text);
-                    button.dataset.copied = '';
-                    button.textContent = 'Copied';
-                    setTimeout(() => {
-                        delete button.dataset.copied;
-                        button.textContent = 'Copy description';
-                    }, 2000);
-                } catch {
-                    button.textContent = 'Copy failed';
-                }
-            });
-        }
-    </script>
 </body>
 </html>
